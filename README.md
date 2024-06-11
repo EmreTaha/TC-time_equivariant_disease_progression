@@ -29,7 +29,7 @@ Make sure that your folder structure is similar to ours. Such as .../pat_id/visi
 ### Self-supervised training
 This script is specifically for TC, but we included model and loss definitions that are used in testing. The ablation studies and comparisons can be run in the similar manner, please see /src/models/vicreg for all available models.
 
-    python src/pretrain.py --save_dir=./saved_models/experiment_1 ---epochs=300 --batch_size=128 --lr=0.0001 --lr_sch=cosine --wd=1e-6 --grad_norm_clip=1.5 --num_workers=14 --lin_iters=50 --ssl_data_dir=/ssl_data --exclude_nb --projector_hidden=2048 --backbone=resnet50 --in_ch=1 --warmup_epochs=10 --vic_lambda=15.0 --vic_mu=25.0 --vic_nu=5.0 --min_diff=30 --max_diff=360 --tc_eq=0.1 --tc_t=0.01 --tc_c=1.0 --predictor_hidden=128 --pred_bias_last --exclude_nb
+    python src/train_TC.py --save_dir=./saved_models/experiment_1 ---epochs=300 --batch_size=128 --lr=0.0001 --lr_sch=cosine --wd=1e-6 --grad_norm_clip=1.5 --num_workers=14 --lin_iters=50 --ssl_data_dir=/ssl_data --exclude_nb --projector_hidden=2048 --backbone=resnet50 --in_ch=1 --warmup_epochs=10 --vic_lambda=15.0 --vic_mu=25.0 --vic_nu=5.0 --min_diff=30 --max_diff=360 --tc_eq=0.1 --tc_t=0.01 --tc_c=1.0 --predictor_hidden=128 --pred_bias_last --exclude_nb
 
 ### Linear Evaluation
 After pretraining, you can run linear evaluation.
