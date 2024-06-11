@@ -5,6 +5,10 @@ This repository is the official Pytorch implementation of MICCAI 2024 paper [Tim
 
 TC is a non-contrastive pretraining network, that uses temporal information between OCT volumes acquired at different times. It learns invariances to image transformations in the projection space, while learning temporal equivariance in the representation space. A specially designed prediction module can manipulate the representations directly in the representation space by using the starting point and the time difference without accessing the future scans. We showed that the futures forwarded in time have more predictive power in temporal disease progression detection task.
 
+<p align="center">
+  <img src="./images/TC.png" width=70%>
+</p>
+
 ## Requirements
 - Torch>=2.0
 - Torchvision
