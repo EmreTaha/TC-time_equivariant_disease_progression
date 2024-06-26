@@ -39,7 +39,7 @@ After pretraining, you can run linear evaluation.
 ### Linear Evaluation with Future Forwarding
 One of the novel aspect of TC is the ability to manipulate the time equivariant representation space. The code propogates the extracted futures by 6 months, and then combine them with the starting points to make the perdiction.
 
-    python src/linear_eval.py --data_dir=/supervsed_data --pretrained --pretrained_model=temporal/TC/experiment_1/epoch_300.tar --epochs=50 --batch_size=128 --warmup_epochs=0 --lr=1e-4 --backbone=resnet50
+    python src/linear_traj_eval.py --data_dir=/supervsed_data --pretrained --pretrained_model=temporal/TC/experiment_1/epoch_300.tar --epochs=50 --batch_size=128 --warmup_epochs=0 --lr=1e-4 --backbone=resnet50
     
 ## Citation
 
