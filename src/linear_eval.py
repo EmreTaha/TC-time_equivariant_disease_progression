@@ -86,7 +86,7 @@ def train(args,return_model=False):
     valloader = create_cacheds_dl(ds_val_scan, test_transform, shuffle=False, num_workers=12,  batch_size=4,cache_rate=1.0, progress=False)
 
     ### Define Linear Protocolor ###
-    linear_proto = Models['Linear'](model, num_classes=1, out_dim=repre_dim, device=device)
+    linear_proto = Models['Linear'](model, num_classes=args.n_cl, out_dim=repre_dim, device=device)
 
     # Train the linear protocol
     linear_proto.train(trainloader, args.epochs, lr = args.lr, class_weights=args.lw, dictionary=True, amp=args.scale)
