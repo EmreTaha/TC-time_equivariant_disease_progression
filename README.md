@@ -1,7 +1,7 @@
 # Learning Temporally Equivariance for Degenerative Disease Progression in OCT by Predicting Future Representations (MICCAI'24)
  [**Paper**](https://arxiv.org/abs/2405.09404)
  
-This repository is the official Pytorch implementation of MICCAI 2024 paper [Time-Equivariant Contrastive Learning for Degenerative Disease Progression in Retinal OCT](https://arxiv.org/abs/2405.09404) by Taha Emre, Arunava Chakravarty, Dmitrii Lachinov, Antoine Rivail, Ursula Schmidt-Erfurth and Hrvoje Bogunović.
+This repository is the official Pytorch implementation of MICCAI 2024 paper [Learning Temporally Equivariance for Degenerative Disease Progression in OCT by Predicting Future Representations](https://arxiv.org/abs/2405.09404) by Taha Emre, Arunava Chakravarty, Dmitrii Lachinov, Antoine Rivail, Ursula Schmidt-Erfurth and Hrvoje Bogunović.
 
 TC is a non-contrastive pretraining network, that uses temporal information between OCT volumes acquired at different times. It learns invariances to image transformations in the projection space, while learning temporal equivariance in the representation space. A specially designed prediction module can manipulate the representations directly in the representation space by using the starting point and the time difference without accessing the future scans. We showed that the futures forwarded in time have more predictive power in temporal disease progression detection task.
 
