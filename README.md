@@ -1,4 +1,4 @@
-# Time-Equivariant Contrastive Learning for Degenerative Disease Progression in Retinal OCT (MICCAI'24)
+# Learning Temporally Equivariance for Degenerative Disease Progression in OCT by Predicting Future Representations (MICCAI'24)
  [**Paper**](https://arxiv.org/abs/2405.09404)
  
 This repository is the official Pytorch implementation of MICCAI 2024 paper [Time-Equivariant Contrastive Learning for Degenerative Disease Progression in Retinal OCT](https://arxiv.org/abs/2405.09404) by Taha Emre, Arunava Chakravarty, Dmitrii Lachinov, Antoine Rivail, Ursula Schmidt-Erfurth and Hrvoje Bogunović.
